@@ -8,9 +8,7 @@ const Sidebar = ({selectedCategory,setSelectedCategory}) => {
 
   const handleClick = (index) => {
    setSelectedCategory(categories[index].name);
-  //  log the selected index
-    //  console.log('Selected category:', categories[index].name);
-    //  
+
      setSelectedCategory(categories[index].name)
   };
   return (
@@ -31,8 +29,8 @@ const Sidebar = ({selectedCategory,setSelectedCategory}) => {
                
             }
             >
-                <span className='text-red-500'><category.icon/></span>
-                <span>{category.name}</span>
+                <span className='text-red-500 text-[13px]'><category.icon/></span>
+                <span className='text-[13px]'>{category.name}</span>
             </button>
         })}
     </Stack>
